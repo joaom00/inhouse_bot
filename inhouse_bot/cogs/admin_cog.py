@@ -23,7 +23,7 @@ class AdminCog(commands.Cog, name="Admin"):
         self.bot = bot
 
     @commands.group(case_insensitive=True)
-    @commands.has_permissions(administrator=True)
+    @commands.has_permissions(manage_guild=True)
     @doc(f"Admin functions, use {PREFIX}help admin for a complete list")
     async def admin(self, ctx: commands.Context):
         if ctx.invoked_subcommand is None:
