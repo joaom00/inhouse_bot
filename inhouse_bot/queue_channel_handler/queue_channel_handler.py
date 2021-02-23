@@ -99,8 +99,12 @@ class QueueChannelHandler:
 
             embed.add_field(name="Duos", value=", ".join(duos_strings))
 
+        embed.description = ""
+        embed.add_field(name="Gamers Club", value="[**PARTICIPE DO GC RIFT BY RAZER E DISPUTE 5000 REAIS EM PREMIAÇÃO. INSCREVA-SE AGORA!**](https://bit.ly/37AqphB)", inline=False)
+        embed.set_image(url="https://cdn.discordapp.com/attachments/796818933255766056/813598337793261599/ezgif.com-gif-maker_2.gif")
+
         embed.set_footer(
-            text=f"Use {PREFIX}queue [role] to join or !leave to leave | All non-queue messages are deleted"
+            text=f"Use {PREFIX}queue [role] para entrar ou !leave para sair"
         )
 
         message_text = ""
